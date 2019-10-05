@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content%}
+
+<form action="" method="POST" >
+    {{form.hidden_tag()}}
+    <fieldset class="form-group" style="text-align:center" >
+        <legend class="border-bottom mb-4"> <h1 style="text-align:center; color: blue;"> Please Login</h1></legend>
+        <div class="form-group" style="width: 200px; margin-left: 650px" >
+            {{form.username.label(class="form-control-label")}}
+            {% if form.username.errors %}
+            {{form.username(class="form-control form-control-lg is-invalid")}}
+            <div class="invalid-feedback">
+                {% for errors in form.username.errors%}
+                <span>{{errors}}</span>
+                {% endfor %}
+            </div>
+            {% else %}
+            {{form.username(class="form-control form-control-lg")}}
+            {% endif %}
+        </div>
+        <br>
+        <div class="form-group"style="width: 200px; margin-left: 650px">
+            {{form.password.label(class="form-control-label")}}
+            {% if form.password.errors %}
+            {{form.password(class="form-control form-control-lg is-invalid")}}
+            <div class="invalid-feedback" >
+                {% for error in form.password.errors%}
+                <span>{{error}}</span>
+                {% endfor %}
+            </div>
+            {% else %}
+            {{form.password(class="form-control form-control-lg")}}
+            {% endif %}
+        </div>
+    </fieldset>
+    <div class="form-group"style="width: 200px; margin-left: 720px">{{form.submit(class="btn btn-outline-info")}}</div>
+</form>
+
+{% if error %}
+<p class="error" style="color: red;"><srtong>Error:</srtong> {{error}} </p>
+{% endif %}
+
+{% endblock %}
