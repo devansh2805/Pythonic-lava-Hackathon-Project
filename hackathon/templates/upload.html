@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <head>
+        <title>
+            File input
+        </title>
+
+    </head>
+    <body align="center">
+    <h1 style="text-align: center; color:red;">KJSCE Attendance</h1>
+        <div class="container">
+            <h1 style="text-align: center; color:blue;">File Input</h1>
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+
+                <div class="form-group" align="center">
+                    <label for ="inputFile" style="color:red;font-size:30px;">File</label>
+                    <input type="file" name="inputFile"  >
+                <br>
+                <button type="submit" align="center" class="btn btn-default" style="text-align:center;height:30px;">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+{% endblock %}

@@ -1,56 +1,5 @@
 {% extends "layout.html" %}
 
-{% block styling %}
-*
-{
-    margin:0px;
-    padding:0px;
-}
-.dropdown
-{
-    position:relative;
-    display:inline-block;
-}
-#container ul
-{
-    list-style:none;
-}
-#container ul li
-{
-    background-color:orange;
-    width:250px;
-    height:50px;
-    line-height:50px;
-    border:1px solid white;
-    float:left;
-    text-align:center;
-    color:white;
-    font-size:20px;
-    position:relative;
-}
-
-#container ul li:hover
-{
-    background-color:red;
-}
-
-#container ul ul
-{
-    display:none;
-}
-#container ul li:hover > ul
-{
-    display:block;
-}
-#container ul ul ul 
-{
-    margin-left:250px;
-    top:0px;
-    position:absolute;
-}
-
-{% endblock %}
-
 {% block content %}
 <h1 style="text-align: center; color:red;">KJSCE Attendance</h1>
 <br><br>
@@ -64,42 +13,13 @@
 <ul>
     <li>My Courses
         <ul>
-            <li>Programming in C
+            <li>OBJECT ORIENTED PROGRAMMING METHODOLOGY
             <ul>
                 <li><a href="/upload">F.Y.B.Tech Class C</a></li>
             </ul>
             </li>
         </ul>
-
     </li>
-    <li>My Labs
-        <ul>
-            <li>Programming in C
-            <ul>
-                <li><a href="/upload1">F.Y.B.Tech Batch C2</a></li>
-                <li><a href="/upload2">F.Y.B.Tech Batch J1</a></li>
-                <li><a href="/upload3">F.Y.B.Tech Batch D2</a></li>
-            </ul>
-            </li>
-        </ul>
-    </li>
-    <li>My Tutorials
-        <ul>
-            <li>Programming in C
-            <ul>
-                <li><a href="/upload4">F.Y.B.Tech Batch C2</a></li>
-                <li><a href="/upload5">F.Y.B.Tech Batch J1</a></li>
-                <li><a href="/upload6">F.Y.B.Tech Batch D2</a></li>
-            </ul>
-            </li>
-            <li>Operating System
-            <ul>
-                <li><a href="/upload7">T.Y.B.Tech Batch B1</a></li>
-            </ul>
-            </li>
-        </ul>
-    </li>
-
 </ul>
 </div>
 

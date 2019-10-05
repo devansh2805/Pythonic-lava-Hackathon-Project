@@ -42,6 +42,13 @@ def login():
             return render_template('home.html',title="Home Page",name=user.name,surname=user.surname,department=user.department)
     return render_template('login.html',title="Login",error=error,form=form)
 
+@app.route("/upload",methods=["GET","POST"])
+def upload():
+    if request.method=="GET":
+        return render_template('upload.html')
+    elif request.method=="POST":
+        file=request.files['inputFile']
+        file.save(secure_filename(file.filename))
 
 if __name__ == '__main__':
     app.debug = True
