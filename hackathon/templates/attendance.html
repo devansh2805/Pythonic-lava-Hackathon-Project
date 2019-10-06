@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br><br><br>
+<div style="text-align:center;">
+
+    <form method="POST" action="/view" enctype="multipart/form-data">
+<div><button type="submit" class="button button2"style="text-align: center;margin-left:30px;background-color: rgb(56, 154, 245);border: none;padding: 15px;padding-left:100px;padding-right:100px;border-radius:15px;align:center;"><a style="color: white;text-decoration: none;" >View</a></button></div>
+    </form>
+
+    <form method="POST" action="/sbr" enctype="multipart/form-data">
+<br><div><button type="submit" class="button button2"style="text-align: center;margin-left:30px;background-color: rgb(56, 154, 245);border: none;padding: 15px 40px;border-radius:15px;"><a  style="color: white;text-decoration: none;" >Search By Roll number</a></button></div>
+    </form>
+
+    <form method="POST" action="/bs" enctype="multipart/form-data">
+<br><div><button type="submit" class="button button2"style="text-align: center;margin-left:30px;background-color: rgb(56, 154, 245);border: none;padding: 15px 55px;border-radius:15px;"><a  style="color: white;text-decoration: none;" >Search By Lecture</a></button></div>
+    </form>
+
+    <form method="POST" action="/allpre" enctype="multipart/form-data">
+<br><div><button type="submit" class="button button2"style="text-align: center;margin-left:30px;background-color: rgb(56, 154, 245);border: none;padding: 15px 80px;border-radius:15px;"><a  style="color: white;text-decoration: none;" >All present</a></button></div>
+    </form>
+    
+    <form method="POST" action="/allab" enctype="multipart/form-data">
+<br><div><button type="submit" class="button button2"style="text-align: center;margin-left:30px;background-color: rgb(56, 154, 245);border: none;padding: 15px 80px;border-radius:15px;"><a  style="color: white;text-decoration: none;" >All absent</a></button></div>
+    </form>
+
+{% endblock %}
