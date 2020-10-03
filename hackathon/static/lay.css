@@ -1,9 +1,7 @@
 body{        
   padding-top: 60px;
   padding-bottom: 40px;
-  background-image: url("img4.jpg");
-  background-repeat : no-repeat;
-  background-size: cover;
+  background-color: #dbe2ef;
 }
 .container{
   width: 80%;
@@ -11,14 +9,16 @@ body{
 }
 .navbar-brand{
   float:left;
+  margin-left: 20px;
 }
 .fixed-header, .fixed-footer{
   width: 100%;
   position: fixed;        
-  background: #333;
+  background: #3f72af;
   padding: 20px 0;
-  color: #fff;
+  color: #f9f7f7;
   font-family: 'monospace';
+  text-align: center;
 }
 .fixed-header{
   top: 0;
@@ -30,7 +30,7 @@ body{
 }    
 /* Some more styles to beutify this example */
 nav a{
-  color: #fff;
+  color: #f9f7f7;
   text-decoration: none;
   padding: 7px 25px;
   display: inline-block;
@@ -38,7 +38,23 @@ nav a{
 .container p{
   line-height: 200px; /* Create scrollbar to test positioning */
 }
-  
+.form-group{
+  color:#3f72af;
+}
+.btn-outline-info{
+  color: #3f72af;
+  border-color: #3f72af;
+  margin: auto;
+}
+button{
+  color: #dbe2ef;
+  background-color: #3f72af;
+  margin: auto;
+} 
+table{
+  color:#3f72af;
+  border-color: #3f72af;
+}
   /*.site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
