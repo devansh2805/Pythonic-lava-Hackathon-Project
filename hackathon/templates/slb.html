@@ -1,11 +1,13 @@
-<html>
+{% extends "layout.html" %}
+
+{% block content %}
     <head>
             <style type="text/css">
                 .form-style-9{
                     max-width: 60%;
                     background: #FAFAFA;
                     padding: 80px;
-                    margin: 50px auto;
+                    margin: 100px auto;
                     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
                     border-radius: 10px;
                     border: 6px solid #305A72;
@@ -72,6 +74,7 @@
                     background-color: #28739E;
                 }
                 </style>
+                <link rel="stylesheet" href="">
     </head>
 <form method = "POST" action="/lfinalsub" class="form-style-9">
         <ul>
@@ -83,4 +86,4 @@
         </li>
         </ul>
 </form>
-</html>
+{% endblock %}
